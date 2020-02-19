@@ -1,0 +1,101 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Class Assignment</title>
+</head>
+<body>
+<h1 class="title">Class Activity Assignment</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet distinctio id magnam molestiae repellat
+    saepe sunt tempora. Explicabo id minus quidem tenetur! Delectus dicta eius iste, maiores quia similique.</p>
+
+<table class="blueTable">
+    <thead>
+    <tr>
+        <th>Book Title</th>
+        <th>Author</th>
+        <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>A general theory of entrepreneurship</td>
+        <td>Scott Shane</td>
+        <td>34</td>
+    </tr>
+    <tr>
+        <td>A Gift of Fire 4th ed.</td>
+        <td>Sara Baase</td>
+        <td>65</td>
+    </tr>
+    <tr>
+        <td>A good african story</td>
+        <td>Andrew Rugasira</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>A Level Biology</td>
+        <td>Fullick, Mwinshekhe, Muddu, Nyabua</td>
+        <td>76</td>
+    </tr>
+    <tr>
+        <td>Academic success brain power for every student</td>
+        <td>Ogbo Awoke Ogbo</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>A World of Difference</td>
+        <td>Eric Sheppard, Philip Porter, David Faust & Richa Nagar</td>
+        <td>88</td>
+    </tr>
+    <tr>
+        <td>A thousand splendid suns</td>
+        <td>Khaled Hussein</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>African Political systems</td>
+        <td>M. Fortes & E.E Evans-pritchard</td>
+        <td>43</td>
+    </tr>
+    <tr>
+        <td id="newTitle"></td>
+        <td id="newAuthor"></td>
+        <td id="newQuantity"></td>
+    </tr>
+    </tbody>
+</table>
+
+<p>Add a new record</p>
+
+<form onsubmit="getInputValue();">
+
+    <input type="text" placeholder="Title" id="title">
+    <input type="text" placeholder="Name" id="name">
+    <input type="text" placeholder="Quantity" id="quantity">
+    <button type="submit">Submit</button>
+</form>
+
+
+<script>
+    function getInputValue() {
+        // Selecting the input element and get its value
+        let title = document.getElementById("title").value;
+        let name = document.getElementById("name").value;
+        let quantity = document.getElementById("quantity").value;
+
+        document.getElementById('newTitle').innerText = title;
+        document.getElementById('newAuthor').innerText = name;
+        document.getElementById('newQuantity').innerText = quantity;
+
+    }
+</script>
+
+</body>
+</html>
